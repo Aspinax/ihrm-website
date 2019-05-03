@@ -12,6 +12,7 @@ body {
     margin-top: 25px;
     margin-left: 25px;
     margin-right: 25px;
+    overflow-x: hidden;
 }
 
 a {
@@ -32,6 +33,8 @@ ul li a:hover {
     border-radius: 25px;
     border: none;
     margin-top: 10px;
+    position: relative;
+    z-index: 2;
 }
 
 .ihrm-awards-logo {
@@ -67,6 +70,8 @@ ul li a:hover {
     text-align: center;
     font-size: 16px;
     border-radius: 25px;
+    z-index: 2;
+    position: relative;
 }
 
 hr {
@@ -79,4 +84,35 @@ hr {
 
 h4 {
     color: #183c70;
+}
+
+#paths1 {
+    height: 600px;
+    width: 1055px;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    -webkit-transform:translate(105%,-80%);
+    -ms-transform:translate(105%,-80%);
+        transform:translate(105%,-80%);
+}
+
+#paths2 {
+    height: 795px;
+    width: 885px;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    -webkit-transform:translate(35%,-25%);
+    -ms-transform:translate(35%,-25%);
+        transform:translate(35%,-25%);
+}
+
+#paths3 {
+    height: 795px;
+    width: 885px;
+    display: inline-block;
+    -webkit-transform:translate(-65%,-27.5%);
+    -ms-transform:translate(-65%,-27.5%);
+        transform:translate(-65%,-27.5%);
 }
