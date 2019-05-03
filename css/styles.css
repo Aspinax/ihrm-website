@@ -15,23 +15,30 @@ body {
 }
 
 a {
-    color: #000;
+    color: #000000;
 }
 
-.button {
+ul li a:hover {
+    background-color: #ffffff;
+}
+
+.get-started {
     background-color: #ca9d2a;
-    border: none;
-    color: white;
-    width: 176px;
-    height: 20px;
+    color: #fff;
+    width: 180px;
+    height: 40px;
     text-align: center;
     font-size: 16px;
     border-radius: 25px;
+    border: none;
+    margin-top: 10px;
 }
 
 .ihrm-awards-logo {
     height: 100px;
     width: 160px;
+    margin-top: 50px;
+    margin-bottom: 25px;
 }
 
 .award-category {
@@ -39,4 +46,37 @@ a {
     border-radius: 5px;
     width: 360px;
     height: 180px;
+}
+
+.award-navbar {
+    color: #183c70;
+    font-size: 25px;
+    margin-left: 16px;
+}
+
+.circle-of-excellence {
+    color: #183c70;
+}
+
+.learn-more {
+    background-color: #ffffff;
+    color: #ca9d2a;
+    border: 1px solid #ca9d2a;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+hr {
+    width: 10%;
+}
+
+.award-category-hr {
+    width: 5%;
+}
+
+h4 {
+    color: #183c70;
 }
