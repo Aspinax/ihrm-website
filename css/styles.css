@@ -51,8 +51,9 @@ button:active {
 .award-category {
     border: 1px solid #707070;
     border-radius: 5px;
-    width: 360px;
+    width: 90%;
     height: 180px;
+    margin-top: 25px;
 }
 
 .award-navbar {
@@ -119,4 +120,9 @@ h4 {
     -webkit-transform:translate(-65%,-27.5%);
     -ms-transform:translate(-65%,-27.5%);
         transform:translate(-65%,-27.5%);
+}
+
+.trophy {
+    height: calc(width * 0.75);
+    width: 100%;
 }
