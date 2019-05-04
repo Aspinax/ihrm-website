@@ -26,7 +26,6 @@ ul li a:hover {
 .get-started {
     background-color: #ca9d2a;
     color: #fff;
-    width: 180px;
     height: 40px;
     text-align: center;
     font-size: 16px;
@@ -51,15 +50,8 @@ button:active {
 .award-category {
     border: 1px solid #707070;
     border-radius: 5px;
-    width: 90%;
     height: 180px;
     margin-top: 25px;
-}
-
-.award-navbar {
-    color: #183c70;
-    font-size: 25px;
-    margin-left: 16px;
 }
 
 .circle-of-excellence {
@@ -125,4 +117,73 @@ h4 {
 .trophy {
     height: calc(width * 0.75);
     width: 100%;
+}
+
+p {
+    line-height: 40px;
+}
+
+.paragraph-div {
+    width: 70%;
+}
+
+/* large desktop devices */
+@media all and (min-width: 1200px)
+{
+    .paragraph-div {
+        width: 70%;
+    }
+    .award-navbar {
+        color: #183c70;
+        font-size: 25px;
+        margin-left: 16px;
+    }
+    .get-started {
+        width: 150px;
+    }
+}
+
+/* desktop devices*/
+@media all and (min-width: 600px) and (max-width: 1200px)
+{
+    .paragraph-div {
+        width: 80%;
+    }
+    .award-navbar {
+        color: #183c70;
+        font-size: 20px;
+        margin-left: 32px;
+    }
+    .get-started {
+        width: 120px;
+    }
+    .award-category {
+        width: 90%;
+    }
+}
+
+/* tablet devices */
+@media all and (min-width: 600px) and (max-width: 992px)
+{
+    .paragraph-div {
+        width: 80%;
+    }
+    .award-category {
+        width: 90%;
+    }
+}
+
+/* mobile devices */
+@media all and (max-width: 600px)
+{
+    .paragraph-div {
+        width: 100%;
+    }
+    .award-category {
+        width: 100%;
+    }
+}
+
+.objectives {
+    margin-top: -15px;
 }
