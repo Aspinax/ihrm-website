@@ -3,6 +3,7 @@
 <head>
     <title>IHRM Awards</title>
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -11,14 +12,18 @@
     <nav class="no-shadows white">
         <div class="nav-wrapper">
             <div class="row">
+                <div class="left hide-on-med-and-up">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i
+                            class="black-text material-icons">menu</i></a>
+                </div>
                 <div class="col s1">
                     <a href="#" class="brand-logo"><img src="img/logo.png" class="ihrm-logo"></a>
                 </div>
-                <div class="col s1">
-                    <a class="hide-on-med-and-down award-navbar">Awards</a>
+                <div class="col s1 hide-on-med-and-down ">
+                    <a class="award-navbar">Awards</a>
                 </div>
-                <div class="col s10">
-                    <ul class="right hide-on-med-and-down">
+                <div class="col s10 hide-on-med-and-down">
+                    <ul class="right">
                         <li><a href="#" class="black-text hide-on-med-and-down">Application Process</a></li>
                         <li><a href="#" class="black-text hide-on-med-and-down">Declaration form</a></li>
                         <li><a href="#" class="black-text hide-on-med-and-down">Evaluation Process</a></li>
@@ -34,6 +39,16 @@
             </div>
         </div>
     </nav>
+
+    <ul id="slide-out" class="sidenav">
+        <br/>
+        <li><a href="#">Application Process</a></li>
+        <li><a href="#">Declaration form</a></li>
+        <li><a href="#">Evaluation Process</a></li>
+        <li><a href="#">Award Categories</a></li>
+        <li><a href="#">Get Started</a></li>
+    </ul>
+
     <div class="row">
         <div class="col s12 l6">
             <img src="img/ihrm_awards.png" class="ihrm-awards-logo">
@@ -153,7 +168,9 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
