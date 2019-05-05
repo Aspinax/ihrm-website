@@ -14,3 +14,8 @@
 $(document).ready(function () {
     $('.sidenav').sidenav();
 });
+
+/* added modal functionality */
+$(document).ready(function () {
+    $('.modal').modal();
+});
