@@ -28,7 +28,9 @@ ul li a:hover {
     color: #fff;
     height: 40px;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
+    font-family: avenir_medium;
+    line-height: 40px;
     border-radius: 25px;
     border: none;
     margin-top: 10px;
@@ -63,9 +65,10 @@ button:active {
     color: #ca9d2a;
     border: 1px solid #ca9d2a;
     width: 180px;
-    height: 50px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px !important;
     border-radius: 25px;
     z-index: 2;
     position: relative;
@@ -89,12 +92,14 @@ h4 {
     z-index: 1;
     position: relative;
     display: inline-block;
-    -webkit-transform:translate(105%,-80%);
-    -ms-transform:translate(105%,-80%);
-        transform:translate(105%,-80%);
+    opacity: 0.15;
+    -webkit-transform: translate(105%,-80%);
+    -ms-transform: translate(105%,-80%);
+    transform: translate(105%,-80%);
 }
 
 #paths2 {
+    opacity: 0.15;
     height: 795px;
     width: 885px;
     z-index: 1;
@@ -106,41 +111,93 @@ h4 {
 }
 
 #paths3 {
+    opacity: 0.15;
     height: 795px;
     width: 885px;
-    display: inline-block;
-    -webkit-transform:translate(-65%,-27.5%);
-    -ms-transform:translate(-65%,-27.5%);
-        transform:translate(-65%,-27.5%);
+    position: absolute;
+    margin-top: -250px;
+    left: -595px;
+    rotation: -254deg;
 }
 
 .trophy {
-    height: calc(width * 0.75);
-    width: 100%;
+    height: 484px;
+    width: 645px;
 }
 
 p {
     line-height: 40px;
 }
 
-.paragraph-div {
-    width: 70%;
+.paragraph-div{
+    font-size: 14px;
 }
 
 /* large desktop devices */
 @media all and (min-width: 1200px)
 {
     .paragraph-div {
-        width: 70%;
+        width: 90%;
     }
     .award-navbar {
         color: #183c70;
-        font-size: 25px;
+        font-size: 20px;
         margin-left: 16px;
     }
     .get-started {
         width: 150px;
     }
+    .trophy {
+        margin-left: -70px;
+    }
+}
+
+/*Ryan was here*/
+
+@font-face {
+    font-family: 'avenir_bold'; /*a name to be used later*/
+    src: url('../fonts/avenirheavy.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'avenir_medium'; /*a name to be used later*/
+    src: url('../fonts/avenirmedium.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'avenir_roman'; /*a name to be used later*/
+    src: url('../fonts/avenirroman.otf'); /*URL to font*/
+}
+
+.avenir_bold{
+    font-family: avenir_bold !important;
+}
+
+.avenir_medium{
+    font-family: avenir_medium !important;
+}
+
+.avenir_roman{
+    font-family: avenir_roman !important;
+}
+
+.small{
+    font-size: 14px !important;
+}
+
+.custom_grey {
+    color: #707070 !important;
+}
+
+.push-alittle{
+    padding-left: 150px;
+}
+
+.divider{
+    height: 1px;
+    background-color: #707070;
+    width: 88px;
+    margin-top: 20px;
 }
 
 /* desktop devices*/
@@ -185,5 +242,5 @@ p {
 }
 
 .objectives {
-    margin-top: -15px;
+    margin-top: 200px;
 }
